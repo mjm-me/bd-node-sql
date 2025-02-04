@@ -1,5 +1,5 @@
 {
-  "name": "node",
+  "name": "node-server",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
@@ -8,7 +8,7 @@
     "test": "vitest run",
     "test:c": "vitest run --coverage",
     "lint": "eslint . --ext .ts",
-    "start": "node ./dist/sample.js",
+    "start": "node dist/index.js",
     "start:dev": "cross-env NODE_ENV=dev node ./dist/sample.js"
   },
   "keywords": [],
@@ -31,11 +31,7 @@
     "vitest": "^3.0.4"
   },
   "dependencies": {
-    "commander": "^13.1.0",
     "cross-env": "^7.0.3",
-    "dotenv": "^16.4.7",
-    "inquirer": "^12.4.1",
-    "minimist": "^1.2.8",
-    "yargs": "^17.1.1-candidate.0"
+    "dotenv": "^16.4.7"
   }
 }

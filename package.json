@@ -1,39 +1,38 @@
 {
-  "name": "db-node-sql",
-  "version": "1.0.0",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "start": "node ./dist/index.js",
-    "start:dev": "cross-env NODE_ENV=dev DEBUG=demo* node --watch ./dist/index.js",
-    "start:dev2": "cross-env NODE_ENV=dev DEBUG=app* node --watch --env-file=.env ./dist/index.js",
-    "build": "tsc -w",
-    "test": "vitest run",
-    "test:c": "vitest run --coverage",
-    "lint": "eslint . --ext .ts"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "prettier": {
-    "singleQuote": true
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.19.0",
-    "@types/minimist": "^1.2.5",
-    "@types/node": "^22.12.0",
-    "eslint": "^9.19.0",
-    "globals": "^15.14.0",
-    "prettier": "^3.4.2",
-    "typescript": "^5.7.3",
-    "typescript-eslint": "^8.22.0",
-    "vitest": "^3.0.4"
-  },
-  "dependencies": {
-    "cross-env": "^7.0.3",
-    "debug": "^4.4.0",
-    "dotenv": "^16.4.7",
-    "mysql2": "^3.12.0"
-  }
+    "name": "13.mysql",
+    "version": "1.0.0",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "start": "node dist/index.js",
+        "start:dev": "cross-env NODE_ENV=dev DEBUG=demo* node --watch ./dist/index.js",
+        "start:dev:1": "cross-env NODE_ENV=dev DEBUG=demo* node --watch --env-file=.env ./dist/index.js",
+        "build": "tsc -w",
+        "test": "vitest run",
+        "test:c": "vitest run --coverage",
+        "lint": "eslint . --ext .ts"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "prettier": {
+        "singleQuote": true
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.20.0",
+        "@types/debug": "^4.1.12",
+        "@types/node": "^22.13.4",
+        "eslint": "^9.20.1",
+        "globals": "^16.0.0",
+        "prettier": "^3.5.1",
+        "typescript": "^5.7.3",
+        "typescript-eslint": "^8.24.1",
+        "vitest": "^3.0.6"
+    },
+    "dependencies": {
+        "cross-env": "^7.0.3",
+        "debug": "^4.4.0",
+        "mysql2": "^3.12.0"
+    }
 }
